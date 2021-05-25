@@ -15,3 +15,33 @@ def home(request):
         {
         }
     )
+
+def generic1(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/generic1.html',
+        {
+        }
+    )
+
+def generic2(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/generic2.html',
+        {
+        }
+    )
+
+def generic3(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/generic3.html',
+        {
+        }
+    )

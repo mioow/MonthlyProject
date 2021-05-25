@@ -11,5 +11,8 @@ from app import forms, views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('generic1/', views.generic1, name='generic1'),
+    path('generic2/', views.generic2, name='generic2'),
+    path('generic3/', views.generic3, name='generic3'),
     path('admin/', admin.site.urls),
 ]
