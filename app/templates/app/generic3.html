@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		{% load staticfiles %}
+		<title>CHART 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="https://webeda.azurewebsites.net/" class="title">YEOJW</a>
+			<nav>
+				<ul>
+					
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">가설 3. 가격에 크게 영향을 주는 변수는 코어 수, 터치스크린 유무, 메모리 용량, 저장소 크기일 것이다.</h1>
+					<span class="image fit"><img src="{% static 'app/images/chart4.png' %}"/></span>
+					<p>price_range에 영향을 줄 것으로 예상되는 변수들의 가중치를 주어 Score 변수를 생성하였습니다.</p>
+					<p>kdeplot을 통해 각 price_range의 Score의 경향을 알아보았습니다.</p>
+					<div class="inner">
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>price_range</th>
+												<th>Score_mean</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>0</th>
+												<th>5825</th>
+											</tr>
+
+											<tr>
+												<th>1</th>
+												<th>11361</th>
+											</tr>
+
+											<tr>
+												<th>2</th>
+												<th>18022</th>
+											</tr>
+
+											<tr>
+												<th>3</th>
+												<th>23416</th>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>						
+							</div>
+					<p>chart와 Score_mean으로 price_range가 증가함에 따라 Score가 증가하는 것을 확인할 수 있었습니다. </p>
+					<p>이를 통해 mobile phone의 가격은 코어 수 터치스크린 유무 메모리 용량, 저장소 크기와 상관관계가 있다는 것을 알 수 있었습니다. </p>
+					<ul class="actions">
+						<li><a href="https://webeda.azurewebsites.net/#two" class="button">Back</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="{% static 'app/assets/js/jquery.min.js' %}"></script>
+		<script src="{% static 'app/assets/js/jquery.scrollex.min.js' %}"></script>
+		<script src="{% static 'app/assets/js/jquery.scrolly.min.js' %}"></script>
+		<script src="{% static 'app/assets/js/browser.min.js' %}"></script>
+		<script src="{% static 'app/assets/js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'app/assets/js/util.js' %}"></script>
+		<script src="{% static 'app/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
